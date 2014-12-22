@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#ffebeff1"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/audio_object_shareview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffeb3b"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/audio_object_deleteview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ff558b2f"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/app_bw_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/audio_object_mainview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffebeff1"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <!-- add views here that you want to show at the top ! -->
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dummyView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+    </LinearLayout>
+
+</RelativeLayout>
